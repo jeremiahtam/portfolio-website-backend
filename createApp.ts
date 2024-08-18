@@ -22,9 +22,10 @@ export const createApp = () => {
 
   /** cors Setup*/
   const origin1 = process.env.CORS_ORIGIN_URL_1 as string
-  const allowedOrigins = [origin1];
+  const allowedOrigins = origin1;
   const options: cors.CorsOptions = {
-    origin: allowedOrigins
+    origin: allowedOrigins,
+    optionsSuccessStatus: 200
   };
   app.use(cors(options))
 
