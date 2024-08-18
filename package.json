@@ -6,11 +6,11 @@
     "build": "npx tsc",
     "watch": "npx tsc -w",
     "start": "node --env-file .env dist/app.js",
-    "dev": "nodemon --env-file .env.development dist/app.js",
+    "dev": "nodemon --env-file .env.development.local dist/app.js",
     "test": "jest"
   },
   "nodemonConfig": {
-    "ext": "js,json,development"
+    "ext": "js,json,development.local"
   },
   "keywords": [],
   "author": "",
