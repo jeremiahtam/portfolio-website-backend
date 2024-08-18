@@ -6,7 +6,7 @@ import { createApp } from "./createApp";
 dotenv.config();
 
 /** mongodb connection */
-mongoose.connect(process.env.MONGOOSE_CONNECTION_URI as string)
+mongoose.connect(process.env.MONGOOSE_CONNECTION_URI as string, { dbName: 'portfolio-website' })
   .then(() => console.log("Conneced to database"))
   .catch((err) => console.log(`Error: ${err}`))
 
