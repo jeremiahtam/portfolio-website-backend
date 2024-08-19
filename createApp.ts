@@ -24,9 +24,8 @@ export const createApp = () => {
 
   /** cors Setup*/
   const origin1 = process.env.CORS_ORIGIN_URL_1 as string
-  const origin2 = process.env.CORS_ORIGIN_URL_2 as string
 
-  const allowedOrigins = [origin1, origin2];
+  const allowedOrigins = origin1;
   const options: cors.CorsOptions = {
     origin: allowedOrigins,
     credentials: true,
