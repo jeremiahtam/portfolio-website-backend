@@ -11,6 +11,8 @@ export const createProjectValidation = [
   body('projectDetails').notEmpty().withMessage("Cannot be empty")
     .isString().withMessage("Value must be a string")
     .isLength({ max: 70, min: 10 }).withMessage("Must be between 10 and 70 characters long"),
+  body('projectLink').notEmpty().withMessage("Cannot be empty")
+    .isString().withMessage("Value must be a string"),
   body('projectTags').notEmpty().withMessage("Cannot be empty")
     .isString().withMessage("Value must be a string")
 ]

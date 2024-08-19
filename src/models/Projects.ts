@@ -17,6 +17,10 @@ const ProjectsSchema = new Schema({
     type: Schema.Types.String,
     required: true
   },
+  projectLink: {
+    type: Schema.Types.String,
+    required: true
+  },
   projectTags: {
     type: Schema.Types.String,
     required: true
